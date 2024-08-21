@@ -1,0 +1,24 @@
+/* src/components/CharacterDetail.css */
+
+.character-detail {
+    padding: 20px;
+    background: #ffffff; /* White background for readability */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px;
+  }
+  
+  .character-detail h2 {
+    margin-top: 0;
+  }
+  
+  .character-detail ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .character-detail li {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,35 @@
+/* src/components/CharacterList.css */
+
+.character-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    background: #f5f5f5; /* Light background for contrast */
+  }
+  
+  .character-item {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .character-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .character-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .character-item p {
+    text-align: center;
+    padding: 10px;
+    background: #fff;
+    margin: 0;
+  }
+  

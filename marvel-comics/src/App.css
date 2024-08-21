@@ -1,0 +1,82 @@
+/* src/App.css */
+body {
+  background-color: #f1f1f1;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.app {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.character-list {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.character-card {
+  background: #f7f7f7;
+  border: 2px solid #d32f2f;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+}
+
+.character-image {
+  width: 100%;
+  border-bottom: 2px solid #d32f2f;
+}
+
+.character-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+.character-detail {
+  flex: 2;
+  background: #ffffff;
+  border: 2px solid #d32f2f;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.character-detail h2 {
+  color: #d32f2f;
+}
+
+.character-detail h3 {
+  color: #d32f2f;
+}
+
+.character-detail-image {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.loading, .error, .no-detail {
+  font-size: 18px;
+  color: #d32f2f;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.error {
+  color: #d32f2f;
+}
+
+.no-detail {
+  color: #333;
+}
